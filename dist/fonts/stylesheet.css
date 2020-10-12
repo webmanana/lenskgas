@@ -1,0 +1,24 @@
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('HelveticaNeueCyr-Roman.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('HelveticaNeueCyr-Bold.ttf');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avenir Next Cyr';
+	src: url('AvenirNextCyr-Demi.eot');
+	src: local('Avenir Next Cyr Demi'), local('AvenirNextCyr-Demi'),
+		url('AvenirNextCyr-Demi.eot?#iefix') format('embedded-opentype'),
+		url('AvenirNextCyr-Demi.woff') format('woff'),
+		url('AvenirNextCyr-Demi.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
