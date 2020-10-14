@@ -100,22 +100,34 @@ a:hover {
 	padding-left: 8px;
 	padding-right: 8px;
 }
+.url:hover {
+	color: #0466C8;
+}
+.url:hover span {
+	color: #0466C8;
+}
+.url:hover svg path {
+	color: #0466C8;
+	fill: #0466C8;
+}
 /* header */
 .header {
 	position: relative;
 	background: #313A52;
+	padding-bottom: 32px;
 }
 .phone_item__number {
 	font-family: "Avenir Next Cyr", sans-serif;
 	font-size: 25px;
 	font-style: normal;
-	font-weight: 750;
+	font-weight: bold;
 	line-height: 31px;
 	letter-spacing: 0em;
 	text-align: left;
-	color: #fff
+	color: #fff;
+	padding-bottom: 6px;
 }
-.phone_item__desc {
+.phone_item p {
 	font-family: "HelveticaNeueCyr", sans-serif;
 	font-size: 14px;
 	font-style: normal;
@@ -124,6 +136,7 @@ a:hover {
 	letter-spacing: 0em;
 	text-align: left;
 	color: #B6BCCD;
+	margin: 0;
 }
 .header_bottom__item {
 	width: 25%;
@@ -136,7 +149,85 @@ a:hover {
 	line-height: 29px;
 	letter-spacing: 0em;
 	text-align: left;
-	color: #fff;
+	color: #E2E6F0;
+	padding-left: 16px;
+}
+.header_top__inner {
+	display: flex;
+	justify-content: space-between;
+}
+.header_top {
+	padding-top: 13px;
+	padding-bottom: 16px;
+	border-bottom: 1px solid #404A65;
+}
+.header_menu ul > li > a {
+	color: #B6BCCD;
+	padding: 16px;
+}
+.header_menu ul > li > a:hover {
+	color: #0466C8;
+}
+.is-dropdown-submenu {
+	border: none;
+	background: #fff;
+}
+.header_menu ul > li > ul > li > a {
+	font-family: "HelveticaNeueCyr", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 16px;
+	display: flex;
+	align-items: center;
+	color: #3D4961;
+	padding: 16px 20px!important;
+}
+.header_menu ul > li > ul > li > a:hover {
+	background: #EFEFEF;
+	color: #0466C8;
+}
+.header_menu .dropdown.menu > li.opens-right > .is-dropdown-submenu {
+	top: 62px;
+}
+.header_bottom {
+	padding-top: 18px;
+	padding-bottom: 25px;
+}
+.header_bottom__item {
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+.fire-back {
+  background-image: url(img/fire.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+	background-image: url(img/arrow-down.svg);
+	background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+	border: none;
+	width: 16px;
+	height: 16px;
+	margin-top: -7px!important;
+}
+.header_login__img {
+	padding-right: 16px;
+}
+.header_login__inner {
+	padding-right: 24px;
+}
+.header_login__url:hover span {
+	color: #0466C8;
+}
+.header_search__url {
+	padding: 16px;
+}
+.mobile_menu {
+	display: none;
 }
 @media (max-width: 1200px) {
 	.container {
