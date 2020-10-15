@@ -1,6 +1,16 @@
 jQuery(document).ready(function(){
-	if (document.querySelector('.tovar')) {
-
+	if (document.querySelector('.slider-section')) {
+		 $('.slider-main').slick({
+			  slidesToShow: 1,
+			  arrows: false,
+			  dots: true,
+			  dotsClass: 'slick-dots slider__dots',
+				customPaging: function(slick,index) {
+					 var targetImage = slick.$slides.eq(index).find('img').attr('src');
+					 var targetTitle = slick.$slides.eq(index).find('h3').text();
+					 return '<div class="dots-item"><img src="' + targetImage + '"/><span>' + targetTitle + '</span></div>';
+			 }
+			});
 	}
 });
 
