@@ -32,9 +32,13 @@ ul {
 	margin: 0;
 	padding: 0;
 }
+h1, h2, h3, h4, h5 {
+	margin: 0;
+}
 a {
 	text-decoration: none;
 	color: #0466C8;
+	outline: none;
 }
 a:hover {
 	text-decoration: none;
@@ -44,6 +48,7 @@ a:hover {
 	position: relative;
 	overflow: hidden;
 	z-index: 111;
+	padding-bottom: 160px;
 }
 figure {
 	outline: none;
@@ -192,6 +197,7 @@ figure {
 }
 .header_menu .dropdown.menu > li.opens-right > .is-dropdown-submenu {
 	top: 62px;
+	z-index: 111;
 }
 .header_bottom {
 	padding-top: 18px;
@@ -231,11 +237,49 @@ figure {
 }
 .section {
 	position: relative;
+	margin-bottom: 64px;
+}
+.section_title {
+	margin-bottom: 32px;
+}
+.section_title h2 {
+	font-family: "Avenir Next Cyr", sans-serif;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 31px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #575F73;
+	position: relative;
+	margin-right: 32px;
+	margin-bottom: 0;
+}
+.section_title a {
+	font-family: "Avenir Next Cyr", sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 750;
+	line-height: 20px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #0466C8;
+}
+.section_title h2::after {
+	content: '';
+	display: flex;
+	height: 26px;
+	width: 1px;
+	background: #C4CCDD;
+	position: absolute;
+	right: -16px;
+	top: 4px;
 }
 /* slider */
-.slider-section {
+.slider_section {
 	top: -60px;
 	z-index: 11;
+	margin-bottom: 0;
 }
 .slider-main {
 	width: 100%;
@@ -270,7 +314,7 @@ figure {
 .dots-item {
 	box-shadow: 0px 4px 15px rgba(49, 58, 82, 0.4);
 	position: relative;
-	background: rgba(0, 0, 0, 0.2);
+	background: rgba(0, 0, 0, 0.4);
 	position: relative;
 }
 .dots-item span {
@@ -374,6 +418,133 @@ figure {
 	visibility: visible;
 	transition: visibility 0s linear 0s, opacity 300ms;
 	opacity: 1;
+}
+/* banner */
+.banner_content {
+	background-image: url(img/banner.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 240px;
+	box-shadow: 0px 4px 15px rgba(49, 58, 82, 0.4);
+}
+.banner_desc {
+	width: 50%;
+	position: relative;
+	margin-left: auto;
+	padding: 32px;
+}
+.banner__title {
+	font-family: "Avenir Next Cyr", sans-serif;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: 750;
+	line-height: 31px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #575F73;
+}
+.banner_desc p {
+	font-family: "HelveticaNeueCyr", sans-serif;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 28px;
+	letter-spacing: 0em;
+	text-align: left;
+	margin-top: 16px;
+	margin-bottom: 20px;
+	color: #A8B0C6;
+}
+.button_blue {
+	padding: 16px 45px;
+	color: #fff;
+	background: #0466C8;
+	width: 160px;
+	text-align: center;
+	font-family: "HelveticaNeueCyr", sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 550;
+	line-height: 16px;
+	letter-spacing: 0em;
+}
+.button_blue:hover {
+	color: #fff;
+	background: #065aaf;
+}
+.faq_content li {
+	margin-bottom: 24px;
+}
+.faq_content li a {
+	font-size: 16px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 24px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #A8B0C6;
+}
+.faq_content li a:hover {
+	color: #0466C8;
+}
+.faq__phone {
+	font-family: "Avenir Next Cyr", sans-serif;
+	font-size: 28px;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 26px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #313A52;
+	margin-bottom: 30px;
+}
+.faq_block:first-child .faq_content {
+	background: transparent;
+	padding: 16px 0 0 0;
+}
+.faq_content {
+	padding: 32px;
+	background: #E3EBF8;
+	height: 280px;
+}
+.faq_content h3 {
+	font-family:"Avenir Next Cyr", sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 750;
+	line-height: 26px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #575F73;
+	margin-bottom: 16px;
+}
+.faq_content p {
+	font-family: "HelveticaNeueCyr", sans-serif;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 28px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #A8B0C6;
+	margin-bottom: 16px;
+}
+.faq_content a.blue-url {
+	margin-top: auto;
+}
+.blue-url {
+	font-size: 16px;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 20px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+.blue-url:hover {
+	color: #065aaf;
+}
+.faq_block {
+	width: 33.33333%;
 }
 @media (max-width: 1200px) {
 	.container {

@@ -1,5 +1,5 @@
 jQuery(document).ready(function(){
-	if (document.querySelector('.slider-section')) {
+	if (document.querySelector('.slider_section')) {
 		 $('.slider-main').slick({
 			  slidesToShow: 1,
 			  arrows: false,
