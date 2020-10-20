@@ -278,7 +278,7 @@ figure {
 /* slider */
 .slider_section {
 	top: -60px;
-	z-index: 11;
+	z-index: 1;
 	margin-bottom: 0;
 }
 .slider-main {
@@ -675,6 +675,7 @@ figure {
 }
 .footer_menu {
 	width: 33.33333%;
+	padding-top: 16px;
 }
 .footer_menu span {
 	font-family: "Avenir Next Cyr", sans-serif;

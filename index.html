@@ -13,6 +13,44 @@
 	</head>
 	<body>
 		<div class="wrap">
+			<div class="off-canvas-wrapper">
+		    <div class="off-canvas position-top" id="offCanvas" data-off-canvas data-close-on-click="true">
+					<div class="container">
+						<div class="canvas_inner row">
+							<div class="header_logo center-align">
+								<a href="#" class="row center-align">
+									<div class="header_logo__img">
+										<img src="img/logo.svg" alt="">
+									</div>
+									<span class="header_logo__desc">ООО «ГДК Ленск-газ»</span>
+								</a>
+							</div>
+							<button class="close-button" aria-label="Close menu" type="button" data-close>
+					      <span aria-hidden="true">&times;</span>
+					    </button>
+							<div class="canvas_search">
+								<form class="" action="index.html" method="post">
+									<input type="submit" name="" value="">
+									<input type="text" name="" value="" placeholder="Что вы хотите найти?">
+								</form>
+							</div>
+							<div class="canvas_menu">
+								<span>Быстрые ссылки</span>
+								<ul>
+									<li><a href="">Тарифы</a></li>
+									<li><a href="">Задолженность за газ</a></li>
+									<li><a href="">Информация для потребителей</a></li>
+									<li><a href="">График работы</a></li>
+									<li><a href="">Документация</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+		    </div>
+		    <div class="off-canvas-content" data-off-canvas-content>
+
+		    </div>
+		  </div>
 			<div class="header">
 				<div class="header_top">
 					<div class="container">
@@ -56,7 +94,7 @@
 									</a>
 								</div>
 								<div class="header_search row center-align">
-									<a href="#" class="row center-align header_search__url url">
+									<a href="#" class="row center-align header_search__url url" data-toggle="offCanvas">
 										<div class="header_search__img center-align">
 											<img src="img/search.svg" alt="">
 										</div>
