@@ -25,6 +25,7 @@ body {
 	color: #575F73;
 	font-weight: 400;
 	font-family: "HelveticaNeueCyr", sans-serif;
+	background: #F4F6FA;
 }
 ol,
 ul {
@@ -48,7 +49,6 @@ a:hover {
 	position: relative;
 	overflow: hidden;
 	z-index: 111;
-	padding-bottom: 160px;
 }
 figure {
 	outline: none;
@@ -456,7 +456,7 @@ figure {
 	color: #A8B0C6;
 }
 .button_blue {
-	padding: 16px 45px;
+	padding: 16px 30px;
 	color: #fff;
 	background: #0466C8;
 	width: 160px;
@@ -472,10 +472,10 @@ figure {
 	color: #fff;
 	background: #065aaf;
 }
-.faq_content li {
+.section_content li {
 	margin-bottom: 24px;
 }
-.faq_content li a {
+.section_content li a {
 	font-size: 16px;
 	font-style: normal;
 	font-weight: normal;
@@ -484,7 +484,7 @@ figure {
 	text-align: left;
 	color: #A8B0C6;
 }
-.faq_content li a:hover {
+.section_content li a:hover {
 	color: #0466C8;
 }
 .faq__phone {
@@ -498,16 +498,15 @@ figure {
 	color: #313A52;
 	margin-bottom: 30px;
 }
-.faq_block:first-child .faq_content {
-	background: transparent;
+.section_block:first-child .section_content {
 	padding: 16px 0 0 0;
 }
-.faq_content {
+.section_content {
 	padding: 32px;
 	background: #E3EBF8;
 	height: 280px;
 }
-.faq_content h3 {
+.section_content h3 {
 	font-family:"Avenir Next Cyr", sans-serif;
 	font-size: 18px;
 	font-style: normal;
@@ -518,7 +517,10 @@ figure {
 	color: #575F73;
 	margin-bottom: 16px;
 }
-.faq_content p {
+.section_content a:hover h3 {
+	color: #0466C8;
+}
+.section_content p {
 	font-family: "HelveticaNeueCyr", sans-serif;
 	font-size: 15px;
 	font-style: normal;
@@ -529,7 +531,7 @@ figure {
 	color: #A8B0C6;
 	margin-bottom: 16px;
 }
-.faq_content a.blue-url {
+.section_content a.blue-url {
 	margin-top: auto;
 }
 .blue-url {
@@ -543,8 +545,177 @@ figure {
 .blue-url:hover {
 	color: #065aaf;
 }
-.faq_block {
+.section_block, .anonce_block {
 	width: 33.33333%;
+}
+.anonce_date {
+	font-family: "HelveticaNeueCyr", sans-serif;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 22px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #AFB9D2;
+	margin-bottom: 16px;
+}
+.anonce_content {
+	background: #FFFFFF;
+	box-shadow: 0px 4px 15px rgba(49, 58, 82, 0.2);
+	padding: 32px!important;
+	height: 410px!important;
+}
+.anonce_mini_content h3, .news_content h3, .section__url h3 {
+	font-family: "Avenir Next Cyr", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 750;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #575F73;
+  margin-bottom: 16px;
+}
+.anonce_mini_content a:hover h3, .news_desc a:hover h3, .section__url:hover h3 {
+  color: #0466C8;
+}
+.anonce_mini_content:first-child {
+	border-bottom: 1px dashed #BAC2CE;
+	margin-bottom: 20px;
+	margin-left: 16px;
+}
+.anonce_mini_content {
+	height: 180px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 16px;
+}
+.news__img img {
+	height: 360px;
+	object-fit: cover;
+}
+.news_desc {
+	background: #fff;
+	padding: 32px;
+}
+.news_content {
+	box-shadow: 0px 4px 15px rgba(49, 58, 82, 0.2);
+}
+.news_desc a h3 {
+	margin-bottom: 32px;
+}
+.news_block {
+	width: 66.66666%;
+}
+.news_block:last-child {
+	width: 33.33333%;
+}
+.news-mini_content {
+	margin-left: 16px;
+	margin-bottom: 32px;
+	border-bottom: 1px dashed #BAC2CE;
+}
+.news-mini_content h3 {
+	margin-top: 16px;
+	margin-bottom: 32px;
+}
+.footer {
+	background: #fff;
+	padding-top: 32px;
+	padding-bottom: 52px;
+}
+.footer_block:first-child {
+	width: 40%;
+}
+.footer_block {
+	width: 60%;
+}
+.footer_logo__desc {
+	font-family: "Avenir Next Cyr", sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 750;
+	line-height: 29px;
+	letter-spacing: 0em;
+	text-align: left;
+  color: #313A52;
+	padding-left: 16px;
+}
+.footer_search__form input[type=submit] {
+	width: 42px;
+	height: 42px;
+	background-image: url(img/footer_search.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	border: none;
+	outline: none;
+	background-color: #EFF4F8;
+	cursor: pointer;
+}
+.footer_search__form input[type=text] {
+	padding: 10px 16px;
+	width: 200px;
+	border: none;
+	outline: none;
+	box-shadow: none;
+	background-color: #EFF4F8;
+	margin-bottom: 0;
+	height: 42px;
+}
+.footer_logo p {
+	margin-top: 16px;
+	margin-bottom: 26px;
+	color: #A8B0C6;
+	font-family: "HelveticaNeueCyr", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 28px;
+}
+.footer_menu {
+	width: 33.33333%;
+}
+.footer_menu span {
+	font-family: "Avenir Next Cyr", sans-serif;
+	font-style: normal;
+	font-weight: 750;
+	font-size: 18px;
+	line-height: 26px;
+	color: #575F73;
+	margin-bottom: 16px;
+	display: flex;
+}
+.footer_menu ul li {
+	margin-bottom: 2px;
+}
+.footer_menu ul li a {
+	font-family: "HelveticaNeueCyr", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 28px;
+	color: #A8B0C6;
+}
+.footer_menu ul li a:hover {
+	color: #0466C8;
+}
+.footer_bottom {
+	justify-content: space-between;
+	padding-top: 80px;
+}
+.footer_copyright, .footer_platforma {
+	font-family: "HelveticaNeueCyr", sans-serif;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 28px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #A8B0C6;
+}
+.footer_platforma a {
+	font-weight: bold;
 }
 @media (max-width: 1200px) {
 	.container {
