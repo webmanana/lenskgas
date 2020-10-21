@@ -718,6 +718,68 @@ figure {
 .footer_platforma a {
 	font-weight: bold;
 }
+.off-canvas {
+	background: #262B36;
+	height: 380px;
+}
+.canvas_search__form input[type=submit] {
+	width: 100px;
+	height: 100px;
+	background-image: url(img/header-search.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.canvas_search__form input[type=text]::placeholder {
+	color: #0466C8;
+}
+.canvas_search__form input[type=text] {
+	padding: 26px 16px;
+	border: none;
+	outline: none;
+	box-shadow: none;
+	background-color: transparent;
+	margin-bottom: 0;
+	height: 42px;
+	color: #fff;
+	font-size: 42px;
+	height: 100px;
+}
+.canvas_inner {
+	padding-top: 32px;
+}
+.canvas_menu__title {
+	font-family: "Avenir Next Cyr", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 22px;
+	color: #0466C8;
+	margin-bottom: 11px;
+	display: flex;
+}
+.canvas_menu ul li a {
+	font-family: "Avenir Next Cyr", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 20px;
+	color: #FFFFFF;
+}
+.canvas_menu ul li a:hover {
+	color: #0466C8;
+}
+.canvas_menu ul {
+	width: 560px;
+	height: 100px;
+	flex-wrap: wrap;
+}
+.canvas_menu ul li {
+	margin-bottom: 7px;
+}
 @media (max-width: 1200px) {
 	.container {
 		max-width: 768px;
