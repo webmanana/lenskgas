@@ -780,18 +780,213 @@ figure {
 .canvas_menu ul li {
 	margin-bottom: 7px;
 }
+.mobile_top {
+	background: #2D354D;
+}
+.mobile_top__inner {
+	justify-content: flex-end;
+}
+.anonce .section_block:nth-child(2n){
+  display: none;
+}
+.anonce .section_block{
+	width: 50%;
+}
 @media (max-width: 1200px) {
 	.container {
-		max-width: 768px;
+		max-width: 848px;
+	}
+	.phone_item__number, .banner__title, .slider-main figure figcaption a h3, .section_title h2 {
+		font-size: 20px;
+	}
+	.header_bottom__item {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.slider-main .slick-list {
+    width: 65%;
+	}
+	.slider-main figure img, .slider-main {
+		height: 390px;
+	}
+	.slider__dots li img {
+    width: 272px;
+    height: 120px;
+    z-index: -1;
+    position: relative;
+	}
+	.banner_content {
+		background-position: bottom;
+	}
+	.banner_desc p {
+		font-size: 14px;
+	}
+	.faq_inner {
+		flex-wrap: wrap;
+	}
+	.faq_inner .section_block:first-child {
+		width: 100%;
+		height: 140px;
+	}
+	.faq_list {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.faq_list li {
+		width: 50%;
+	}
+	.faq_inner .section_block, .news_block, .news_block:last-child {
+		width: 50%;
+	}
+	.news__img img {
+		height: 250px;
+	}
+	.anonce_mini_content h3, .news_content h3, .section__url h3 {
+		font-size: 16px;
+	}
+	.faq .section_block:first-child .section_content {
+		background: transparent;
+	}
+	.header_logo__desc {
+		font-size: 22px;
+	}
+	.anonce_date {
+		font-size: 14px;
+		font-weight: normal;
+	}
+	.footer_logo__desc {
+		font-size: 20px;
+	}
+	.footer_menu span {
+		font-size: 16px;
+	}
+	.header_login {
+		display: none;
 	}
 }
-@media (max-width: 820px) {
-	.container {
-		max-width: 568px;
-	}
-}
-@media (max-width: 568px) {
+@media (max-width: 850px) {
 	.container {
 		max-width: 320px;
+	}
+	.slider-main .slick-list {
+		width: 100%;
+	}
+	.slider-main figure figcaption {
+    background: #0466C8;
+    padding: 16px;
+    color: #fff;
+    width: 100%;
+    height: 150px;
+    position: relative;
+    right: auto;
+    bottom: 0;
+	}
+	.slider-main figure img {
+		height: 200px;
+	}
+	.slider-main {
+		height: 350px
+	}
+	.banner_content {
+    background-position: 25% 0%;
+		background-size: auto;
+		height: 482px;
+		position: relative;
+		background-color: #fff;
+	}
+	.banner_desc {
+    width: 100%;
+    position: absolute;
+    margin-left: auto;
+    padding: 24px;
+    bottom: 0;
+		left: 0;
+	}
+	.faq_list {
+		flex-direction: column;
+	}
+	.faq_inner .section_block:first-child, .section_content {
+		height: auto;
+	}
+	.faq_list li, .faq_inner .section_block, .news_block, .news_block:last-child {
+		width: 100%;
+	}
+	.faq_inner .section_block, .news_block, .news_block:last-child {
+		margin-bottom: 16px;
+	}
+	.faq__phone {
+		font-size: 22px;
+	}
+	.blue-url {
+		font-size: 14px;
+	}
+	.anonce .section_block:first-child, .news_block:first-child {
+		display: flex;
+	}
+	.anonce_content {
+		height: auto!important;
+		padding: 24px!important;
+	}
+	.anonce .section_block {
+		width: 100%;
+	}
+	.footer {
+		background: #313A52;
+	}
+	.news_desc {
+		padding: 24px;
+	}
+	.footer_block:first-child, .footer_block {
+		width: 100%;
+	}
+	.footer .block_inner {
+		flex-wrap: wrap;
+	}
+	.footer_logo__desc, .footer_menu span {
+		color: #fff;
+	}
+	.footer_menu {
+		width: 50%;
+	}
+	.footer_bottom {
+		flex-direction: column;
+		padding-top: 32px;
+	}
+	.footer_platforma a {
+		color: #A8B0C6;
+	}
+	.footer_search__mobile {
+		margin-top: 32px;
+	}
+	.footer_search__form input[type=submit] {
+		background-color: #3D4866;
+	}
+	.footer_search__form input[type=text] {
+		background: #3D4866;
+		font-size: 14px;
+	}
+	.slider__dots {
+		display: none!important;
+	}
+	.slider_section {
+		top: 0;
+	}
+	.anonce .section_block, .news_block, .slider__dots, .header_bottom, .mobile_top, .footer_logo p, .footer_search, .header_menu {
+		display: none;
+	}
+	.header_logo__desc {
+		font-size: 14px;
+	}
+	.header_logo__img svg {
+		width: 32px;
+		height: 32px;
+	}
+	.header_top {
+		padding-top: 9px;
+		padding-bottom: 9px;
+	}
+	.header {
+		padding-bottom: 0;
 	}
 }
