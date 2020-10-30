@@ -4,13 +4,35 @@ jQuery(document).ready(function(){
 			  slidesToShow: 1,
 			  arrows: false,
 			  dots: true,
-			  dotsClass: 'slick-dots slider__dots',
-				customPaging: function(slick,index) {
-					 var targetImage = slick.$slides.eq(index).find('img').attr('src');
-					 var targetTitle = slick.$slides.eq(index).find('h3').text();
-					 return '<div class="dots-item"><img src="' + targetImage + '"/><span>' + targetTitle + '</span></div>';
-			 }
+				responsive: [
+			    {
+			      breakpoint: 9999,
+			      settings: {
+							dotsClass: 'slick-dots slider__dots',
+							customPaging: function(slick,index) {
+								 var targetImage = slick.$slides.eq(index).find('img').attr('src');
+								 var targetTitle = slick.$slides.eq(index).find('h3').text();
+								 return '<div class="dots-item"><img src="' + targetImage + '"/><span>' + targetTitle + '</span></div>';
+						  },
+			      }
+			    },
+			    {
+			      breakpoint: 850,
+			      settings: {
+							customPaging : function(slider, i) {
+			            var thumb = jQuery(slider.$slides[i]).data();
+			            return '<button type="button">'+(i+1)+'</button>';
+			        }
+			      }
+			    }
+			  ]
 			});
+	}
+	if (document.querySelector('.showmore')) {
+		$('.showmore').on('click', function() {
+			$(this).text("");
+			$(this).addClass("lds-dual-ring");
+		});
 	}
 });
 

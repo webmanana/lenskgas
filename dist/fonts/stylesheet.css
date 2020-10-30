@@ -1,15 +1,21 @@
 @font-face {
 	font-family: 'HelveticaNeueCyr';
-	src: url('HelveticaNeueCyr-Roman.otf');
-	src: local('HelveticaNeueCyr'), local('HelveticaNeueCyr'),
-		url('HelveticaNeueCyr-Roman.otf');
+	src: url('HelveticaNeueCyr-Roman.eot');
+	src: local('HelveticaNeueCyr-Roman'),
+		url('HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype'),
+		url('HelveticaNeueCyr-Roman.woff') format('woff'),
+		url('HelveticaNeueCyr-Roman.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'HelveticaNeueCyr';
-	src: local('HelveticaNeueCyr'), local('HelveticaNeueCyr'), url('HelveticaNeueCyr-Bold.otf'), url('AvenirNextCyr-Bold.ttf') format('truetype');;
+	src: url('HelveticaNeueCyr-Bold.eot');
+	src: local('HelveticaNeueCyr-Bold'),
+		url('HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype'),
+		url('HelveticaNeueCyr-Bold.woff') format('woff'),
+		url('HelveticaNeueCyr-Bold.ttf') format('truetype');
 	font-weight: bold;
 	font-style: normal;
 }
@@ -26,11 +32,11 @@
 }
 @font-face {
 	font-family: 'Avenir Next Cyr';
-	src: url('AvenirNextCyr-Regular.eot');
-	src: local('Avenir Next Cyr Regular'), local('AvenirNextCyr'),
-		url('AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'),
-		url('AvenirNextCyr-Regular.woff') format('woff'),
-		url('AvenirNextCyr-Regular.ttf') format('truetype');
+	src: url('AvenirNextCyr-Medium.eot');
+	src: local('Avenir Next Cyr Medium'), local('AvenirNextCyr'),
+		url('AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'),
+		url('AvenirNextCyr-Medium.woff') format('woff'),
+		url('AvenirNextCyr-Medium.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
