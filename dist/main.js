@@ -34,6 +34,44 @@ jQuery(document).ready(function(){
 			$(this).addClass("lds-dual-ring");
 		});
 	}
+	if (document.querySelector('.page_slider')) {
+		$('.page_slider__big').slick({
+		  slidesToShow: 1,
+		  slidesToScroll: 1,
+		  arrows: false,
+		  asNavFor: '.page_slider__thumb'
+		});
+		$('.page_slider__thumb').slick({
+		  slidesToShow: 8,
+		  slidesToScroll: 1,
+			infinite: false,
+		  asNavFor: '.page_slider__big',
+		  arrows: true,
+		  centerMode: false,
+		  focusOnSelect: true,
+			responsive: [
+		    {
+		      breakpoint: 9999,
+		      settings: {
+		        slidesToShow: 8,
+		      }
+		    },
+		    {
+		      breakpoint: 1200,
+		      settings: {
+		        slidesToShow: 6
+		      }
+		    },
+		    {
+		      breakpoint: 480,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1
+		      }
+		    }
+		  ]
+		});
+	}
 });
 
 $('img[src$=".svg"]').each(function() {

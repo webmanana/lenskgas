@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>ООО «ГДК Ленск-газ»</title>
+		<link rel="stylesheet" href="dist/fonts/stylesheet.css">
+		<link rel="stylesheet" href="dist/foundation/css/foundation.css">
+		<link rel="stylesheet" href="dist/slick/slick.css">
+		<link rel="stylesheet" href="dist/slick/slick-theme.css">
+		<link rel="stylesheet" href="dist/fancybox/jquery.fancybox.min.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="off-canvas-wrapper">
+		    <div class="off-canvas position-top" id="offCanvas" data-off-canvas data-close-on-click="true">
+					<div class="container">
+						<div class="canvas_inner column">
+							<div class="header_logo center-align">
+								<a href="#" class="row center-align">
+									<div class="header_logo__img">
+										<img src="img/logo.svg" alt="">
+									</div>
+									<span class="header_logo__desc">ООО «ГДК Ленск-газ»</span>
+								</a>
+							</div>
+							<button class="close-button" aria-label="Close menu" type="button" data-close>
+					      <span aria-hidden="true">&times;</span>
+					    </button>
+							<div class="canvas_search">
+								<form class="canvas_search__form row" action="index.html" method="post">
+									<input type="submit" name="" value="">
+									<input type="text" name="" value="" placeholder="Что вы хотите найти?">
+								</form>
+							</div>
+							<div class="canvas_menu">
+								<span class="canvas_menu__title">Быстрые ссылки</span>
+								<ul class="column">
+									<li><a href="">Тарифы</a></li>
+									<li><a href="">Задолженность за газ</a></li>
+									<li><a href="">Информация для потребителей</a></li>
+									<li><a href="">График работы</a></li>
+									<li><a href="">Документация</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+		    </div>
+		  </div>
+			<div class="header">
+				<div class="mobile_top">
+					<div class="container">
+						<div class="mobile_top__inner row">
+							<div class="header_login__inner row center-align">
+								<a href="#" class="row center-align header_login__url url">
+									<div class="header_login__img">
+										<img src="img/login.svg" alt="">
+									</div>
+									<span class="grey-1">Личный кабинет</span>
+								</a>
+							</div>
+							<div class="header_search row center-align">
+								<a href="#" class="row center-align header_search__url url" data-toggle="offCanvas">
+									<div class="header_search__img center-align">
+										<img src="img/search.svg" alt="">
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header_top">
+					<div class="container">
+						<div class="header_top__inner row">
+							<div class="header_logo row center-align">
+								<a href="#" class="row center-align">
+									<div class="header_logo__img">
+										<img src="img/logo.svg" alt="">
+									</div>
+									<span class="header_logo__desc">ООО «ГДК Ленск-газ»</span>
+								</a>
+								<div class="mobile-header_button">
+									<div class="header_button__inner row">
+										<button class="header_button__login" type="button" name="button">
+											<img src="img/user.svg" alt="">
+										</button>
+										<button class="header_button__burger" type="button" name="button" data-toggle="dropdown">
+
+										</button>
+									</div>
+								</div>
+								<div class="dropdown-pane dropdown_mobile" id="dropdown" data-dropdown data-auto-focus="true">
+									<div class="container">
+										<div class="dropdown_mobile__inner row">
+											<div class="block_item header_bottom__item url">
+												<a href="tel:04" class="phone_item column">
+													<span class="phone_item__number">04</span>
+													<p>Телефон аварийных служб</p>
+												</a>
+											</div>
+											<div class="block_item header_bottom__item url">
+												<a href="tel:104" class="phone_item column">
+													<span class="phone_item__number">104</span>
+													<p>Для мобильных операторов</p>
+												</a>
+											</div>
+											<div class="block_item header_bottom__item">
+												<a href="tel:460000" class="phone_item column url">
+													<span class="phone_item__number">8 (4112) 46-00-00</span>
+													<p>Служба единое окно</p>
+												</a>
+											</div>
+									  </div>
+										<div class="column">
+											<div class="block_item footer_menu">
+												<span>Ленск-газ</span>
+												<ul>
+													<li><a href="">Вакансии</a></li>
+													<li><a href="">О компании</a></li>
+													<li><a href="">Контакты</a></li>
+												</ul>
+											</div>
+											<div class="block_item footer_menu">
+												<span>Пресс-центр</span>
+												<ul>
+													<li><a href="">Новости</a></li>
+													<li><a href="">Объявления</a></li>
+												</ul>
+											</div>
+											<div class="block_item footer_menu">
+												<span>Потребителям</span>
+												<ul>
+													<li><a href="">Информация</a></li>
+													<li><a href="">Личный кабинет</a></li>
+												</ul>
+											</div>
+											<form class="footer_search__form dropdown_search row" action="index.html" method="post">
+												<input type="submit" name="" value="">
+												<input type="text" name="" value="" placeholder="Поиск на сайте">
+											</form>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="header_menu center-align">
+								<ul class="dropdown menu header_menu__content" data-dropdown-menu>
+									<li><a href="">О компании</a></li>
+									<li>
+										<a href="">Информация</a>
+										<ul>
+											<li><a href="">Руководство</a></li>
+											<li><a href="">Реквизиты</a></li>
+											<li><a href="">Контакты</a></li>
+										</ul>
+									</li>
+									<li><a href="">Новости</a></li>
+									<li><a href="">Контакты</a></li>
+									<li>
+										<a href="">Еще</a>
+										<ul class="dropdown menu" data-dropdown-menu>
+											<li><a href="">Контакты</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="header_login row">
+								<div class="header_login__inner row center-align">
+									<a href="#" class="row center-align header_login__url url">
+										<div class="header_login__img">
+											<img src="img/login.svg" alt="">
+										</div>
+										<span class="grey-1">Личный кабинет</span>
+									</a>
+								</div>
+								<div class="header_search row center-align">
+									<a href="#" class="row center-align header_search__url url" data-toggle="offCanvas">
+										<div class="header_search__img center-align">
+											<img src="img/search.svg" alt="">
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="mobile_menu">
+
+						</div>
+					</div>
+				</div>
+
+				<div class="header_bottom">
+					<div class="container">
+						<div class="header_bottom__inner block_inner row">
+							<div class="block_item header_bottom__item fire-back url">
+								<a href="tel:04" class="phone_item column">
+									<span class="phone_item__number">04</span>
+									<p>Телефон аварийных служб</p>
+								</a>
+							</div>
+							<div class="block_item header_bottom__item fire-back url">
+								<a href="tel:104" class="phone_item column">
+									<span class="phone_item__number">104</span>
+									<p>Для мобильных операторов</p>
+								</a>
+							</div>
+							<div class="block_item header_bottom__item">
+								<a href="tel:460000" class="phone_item column url">
+									<span class="phone_item__number">8 (4112) 46-00-00</span>
+									<p>Служба единое окно</p>
+								</a>
+							</div>
+							<div class="block_item header_bottom__item">
+								<a href="#" class="phone_item column url">
+									<span class="phone_item__number">В личный кабинет <img src="img/arrow-right.svg" alt=""></span>
+									<p>Оплата за газоснабжение</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main">
+				<div class="container">
+					<div class="page">
+						<div class="sidebar">
+							<div class="sidebar_menu">
+								<ul>
+									<li class="active"><a href="">Новости</a></li>
+									<li><a href="">Объявления</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="page_wrap">
+							<div class="page_inner">
+								<div class="back_page">
+									<a href="#" class="url"><img src="img/arrow-left.svg" alt=""> Вернуться назад</a>
+								</div>
+								<div class="page_content">
+									<span class="news_list__date">30 сентября 2020</span>
+									<h1 class="page_title">Ежегодный чемпионат по волейболу среди сотрудников компании ООО ГДК “Ленск-газ”</h1>
+									<div class="page_picture">
+										<div class="page_slider">
+											<div class="page_slider__big">
+												<div class="page_slider__big-img">
+													<a data-fancybox="gallery" href="img/news1.png"><img src="img/news1.png"></a>
+												</div>
+												<div class="page_slider__big-img">
+													<a data-fancybox="gallery" href="img/news1.png"><img src="img/news1.png"></a>
+												</div>
+												<div class="page_slider__big-img">
+													<a data-fancybox="gallery" href="img/news1.png"><img src="img/news1.png"></a>
+												</div>
+												<div class="page_slider__big-img">
+													<a data-fancybox="gallery" href="img/news1.png"><img src="img/news1.png"></a>
+												</div>
+												<div class="page_slider__big-img">
+													<a data-fancybox="gallery" href="img/news1.png"><img src="img/news1.png"></a>
+												</div>
+												<div class="page_slider__big-img">
+													<a data-fancybox="gallery" href="img/news1.png"><img src="img/news1.png"></a>
+												</div>
+												<div class="page_slider__big-img">
+													<a data-fancybox="gallery" href="img/news1.png"><img src="img/news1.png"></a>
+												</div>
+												<div class="page_slider__big-img">
+													<a data-fancybox="gallery" href="img/news1.png"><img src="img/news1.png"></a>
+												</div>
+												<div class="page_slider__big-img">
+													<a data-fancybox="gallery" href="img/news1.png"><img src="img/news1.png"></a>
+												</div>
+												<div class="page_slider__big-img">
+													<a data-fancybox="gallery" href="img/news1.png"><img src="img/news1.png"></a>
+												</div>
+											</div>
+											<div class="page_slider__thumb">
+												<div class="page_slider__thumb-img">
+													<img src="img/news1.png" alt="">
+												</div>
+												<div class="page_slider__thumb-img">
+													<img src="img/news1.png" alt="">
+												</div>
+												<div class="page_slider__thumb-img">
+													<img src="img/news1.png" alt="">
+												</div>
+												<div class="page_slider__thumb-img">
+													<img src="img/news1.png" alt="">
+												</div>
+												<div class="page_slider__thumb-img">
+													<img src="img/news1.png" alt="">
+												</div>
+												<div class="page_slider__thumb-img">
+													<img src="img/news1.png" alt="">
+												</div>
+												<div class="page_slider__thumb-img">
+													<img src="img/news1.png" alt="">
+												</div>
+												<div class="page_slider__thumb-img">
+													<img src="img/news1.png" alt="">
+												</div>
+												<div class="page_slider__thumb-img">
+													<img src="img/news1.png" alt="">
+												</div>
+												<div class="page_slider__thumb-img">
+													<img src="img/news1.png" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="page_share">
+										<p>Поделиться в социальных сетях:</p>
+										<script src="https://yastatic.net/share2/share.js"></script>
+										<div class="ya-share2" data-curtain data-services="vkontakte,facebook,odnoklassniki,twitter,whatsapp"></div>
+									</div>
+									<div class="page_desc">
+										<p>Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. Повседневная практика показывает, что начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке модели развития. С другой стороны новая модель организационной деятельности представляет собой интересный эксперимент проверки новых предложений. Таким образом реализация намеченных плановых заданий требуют определения и уточнения существенных финансовых и административных условий. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач.</p>
+
+										<p>Повседневная практика показывает, что сложившаяся структура организации позволяет оценить значение форм развития. Таким образом новая модель организационной деятельности позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач. С другой стороны укрепление и развитие структуры играет важную роль в формировании новых предложений. Равным образом сложившаяся структура организации требуют от нас анализа систем массового участия. Товарищи! укрепление и развитие структуры в значительной степени обуславливает создание модели развития</p>
+									</div>
+								</div>
+							</div>
+							<div class="page_other">
+								<h2>Другие новости</h2>
+								<div class="news_list column">
+									<div class="news_list__block">
+										<div class="news_list__img">
+											<a href="#"><img src="img/news1.png" alt="Ежегодный чемпионат по волейболу среди сотрудников компании ООО ГДК “Ленск-газ”"></a>
+										</div>
+										<div class="news_list__desc">
+											<span class="news_list__date">30 сентября 2020</span>
+											<a href="#" class="url"><h2>Ежегодный чемпионат по волейболу среди сотрудников компании ООО ГДК “Ленск-газ”</h2></a>
+										</div>
+									</div>
+									<div class="news_list__block">
+										<div class="news_list__img">
+											<a href="#"><img src="img/news1.png" alt="Ежегодный чемпионат по волейболу среди сотрудников компании ООО ГДК “Ленск-газ”"></a>
+										</div>
+										<div class="news_list__desc">
+											<span class="news_list__date">30 сентября 2020</span>
+											<a href="#" class="url"><h2>Ежегодный чемпионат по волейболу среди сотрудников компании ООО ГДК “Ленск-газ”</h2></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="container">
+					<div class="block_inner row">
+						<div class="block_item footer_block">
+							<div class="footer_desc">
+								<div class="footer_logo column">
+									<a href="#" class="row center-align">
+										<div class="header_logo__img">
+											<img src="img/logo.svg" alt="">
+										</div>
+										<span class="footer_logo__desc">ООО «ГДК Ленск-газ»</span>
+									</a>
+									<p>Центральная ул., 3, Ленск, Респ. Саха (Якутия), 678142 По всем вопросам: 8 (411) 372-27-53</p>
+									<div class="footer_search">
+										<form class="footer_search__form row" action="index.html" method="post">
+											<input type="submit" name="" value="">
+											<input type="text" name="" value="" placeholder="Поиск на сайте">
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="block_item footer_block block_inner row">
+							<div class="block_item footer_menu">
+								<span>Ленск-газ</span>
+								<ul>
+									<li><a href="">Вакансии</a></li>
+									<li><a href="">О компании</a></li>
+									<li><a href="">Контакты</a></li>
+								</ul>
+							</div>
+							<div class="block_item footer_menu">
+								<span>Пресс-центр</span>
+								<ul>
+									<li><a href="">Новости</a></li>
+									<li><a href="">Объявления</a></li>
+								</ul>
+							</div>
+							<div class="block_item footer_menu">
+								<span>Потребителям</span>
+								<ul>
+									<li><a href="">Информация</a></li>
+									<li><a href="">Личный кабинет</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="block_item footer_search__mobile">
+							<form class="footer_search__form row" action="index.html" method="post">
+								<input type="submit" name="" value="">
+								<input type="text" name="" value="" placeholder="Поиск на сайте">
+							</form>
+						</div>
+					</div>
+					<div class="footer_bottom row">
+						<div class="footer_copyright">
+							© 2020 ООО “ГДК Ленск-газ” Все права защищены.
+						</div>
+						<div class="footer_platforma">
+							Разработано в <a href="http://platforma.bz/">Платформе</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="dist/jquery.min.js"></script>
+		<script src="dist/foundation/js/foundation.js"></script>
+		<script src="dist/slick/slick.min.js"></script>
+		<script src="dist/fancybox/jquery.fancybox.min.js"></script>
+		<script>
+			$(document).foundation();
+		</script>
+		<script src="dist/main.js"></script>
+	</body>
+</html>
