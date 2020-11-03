@@ -1620,10 +1620,10 @@ figure {
 .pagination_arrow a:hover {
 	background: transparent;
 }
-.example_url .container ul {
+.example_url ul {
 	flex-wrap: wrap;
 }
-.example_url .container ul li {
+.example_url ul li {
 	margin-right: 16px;
 }
 .anonce .section_block:nth-child(2n), .mobile_top, .mobile-header_button, .footer_search__mobile {
