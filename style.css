@@ -1620,6 +1620,12 @@ figure {
 .pagination_arrow a:hover {
 	background: transparent;
 }
+.example_url ul {
+	flex-wrap: wrap;
+}
+.example_url ul li {
+	margin-right: 16px;
+}
 .anonce .section_block:nth-child(2n), .mobile_top, .mobile-header_button, .footer_search__mobile {
   display: none;
 }
@@ -1764,6 +1770,12 @@ figure {
 	}
 	.pagination ul li {
 		display: flex;
+	}
+	.feedback_block {
+		width: 100%;
+	}
+	.feedback_file {
+		flex-direction: column;
 	}
 	.work_desc {
 		padding: 16px 24px;
